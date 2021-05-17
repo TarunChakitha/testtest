@@ -1,0 +1,1 @@
+Create an Employee object of attribute like name and salary. Create some 5 to 7 employee objects and add to a ArrayList. Print the entire ArrayList on basis of their salary in Ascending order. (use Comparable)
