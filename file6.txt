@@ -1,0 +1,20 @@
+Employee Records. Id, name designation, salary, years of experience.
+
+Add employee to collections
+	 Update employee salary by 1000 based on designation.
+	 Update employee salary by 5000 based on years of experience.
+	 Delete an employee by id.
+	 Display employee by id.
+	 Display all employees.
+
+Method names for interface
+addEmployee
+	 updateEmployeeSalary
+	 getEmployeeById
+	 getAllEmployee
+	 deleteEmployee
+
+Service implementation.
+	
+ While adding employee. If the employee id is already present in the list throw a custom exception with the message "employee id – x is already present".
+	 While fetching/updating an employee by id if the employee id is not present throw a custom exception with message "employee id -x not exist".

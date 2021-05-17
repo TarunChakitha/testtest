@@ -1,0 +1,36 @@
+Create aadhar record with menu driven program
+
+Create aadhar with aadhar id, name, s/o / husband name, gender , age, address , marital status 
+
+Ex: 123, naresh Bandaru, siva, male, 37, banglore, married 
+
+2) Update name only two times, should not allow third time to update name.
+
+3) Update father name to husband name for women if married 
+
+4) Display all man in alphabetical order.
+
+5) Display all man in alphabetical order. 
+
+create menu driven program to register to xyz application with following scenario
+	
+Create a form with name, age, contact number, country ,city 
+	
+Validate country is available or not in Country list 
+	Validate City is available or not in city list according to country. 
+
+Ex: If you select country “India” , should be available in country list , if you select city “Mumbai” , should be available in cities associated with India.
+
+Country cityp
+
+======= ====
+
+India Mumbai, Delhi, Bangalore, Chennai
+
+USA New York, Los Angles, Washington, Chicago
+
+UK London, Manchester, York, Liverpool
+
+b) Display details based on city in ascending order. 
+
+c) Display details based on country in descending order
