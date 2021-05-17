@@ -1,0 +1,16 @@
+=> Building(buildingId, buildingName), Rooms(roomId, roomName), User(userId, userName), phoneNumber(String/Long)
+
+=> 1 Building has many Rooms, 1 Room has many Users, 1 user has 1 phone
+                -> Building name should be unique and sorted in descending oder of their name
+                -> Room name should be unique.
+                -> Username should be unique and sorted based on their name in descending order.
+                -> No toString to be followed, use EntrySet/Iterator/ListIterator to iterate and show in the below order
+
+                -----BuildingName: GLC------
+                ==RoomName: Mahua==
+                Komala: 9123456789
+                Lekha: 9234567893
+                ==RoomName: Amla==
+                Roohi: 9098765432
+                Sreeja: 9876543223
+
