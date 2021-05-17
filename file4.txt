@@ -1,0 +1,53 @@
+Entity User- user ID, username, Role (Staff, Student), contact Number, Password.
+
+ Book – id, name, Author name, quantity, genre.
+
+ Create a menu driven program 1. Signup 2. Login in. 
+
+
+	
+Signup - add user data into a collections
+	Login – upon login. Store the user name, id, role and message “Logged in at” time at which user logged in in a file. Ex: 1 xyz student logged in at Fri Jan 22 11:55:50 IST 2021
+
+
+While logging in if username and password not matches throw an exception “invalid user”.
+
+Upon login if the role is student display this menu. 
+
+
+	
+View book details
+	Purchase the book by id. While student purchases the book the quantity of book should decrease by 1.
+
+
+While purchasing the book by id. If that book has quantity 0 then throw an exception with message “Requested book is not available”.
+
+
+	
+ Logout. When student select logout. Store student information and message “logged out at” time at which user logged out in a file. 
+
+
+Ex: Ex: 1 xyz student logged out at Fri Jan 22 11:57:30 IST 2021
+
+ Upon Login if the role is staff display the following menu.
+
+
+	
+Add book
+	Update book quantity
+	Delete book by id
+	Get book by id
+	Display all books. 
+	Logout. When staff select logout. Store staff information and message “logged out at” time at which user logged out in a file. 
+
+
+ Ex: 1 xyz admin logged out at Fri Jan 22 11:23:30 IST 2021
+
+
+
+
+ 
+
+
+
+	 Try this problem for your practice for both collection related concepts and JDBC.

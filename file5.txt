@@ -1,0 +1,17 @@
+1.	Consider the following scenario
+
+
+Movie
+1.	Movie Id
+2.	Movie Name
+3.	Budget
+Actor
+1.	Actor id
+2.	Actor Name
+In each movie there can be multiple actors and one actor can do multiple movies. Insert values using command line for the above scenario after that perform the following-
+Make a menu driven program-
+1.	List all the movies done by a particular actor.
+2.	List all the actors in a particular movie.
+3.	List all the movies having budget greater than 100000.
+4.	Count the actors who have done only one movie.
+

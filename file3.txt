@@ -1,0 +1,26 @@
+1. Write a program to find character and their occurrences in the string.(note: space no need to consider, use map interface)
+
+Ex: input: hello world
+
+Output:
+
+ h 1
+
+e 1
+
+l 3
+
+o 2
+
+w 1
+
+r 1
+
+d 1
+
+2. Store Teacher data (teacher name, subject taking) in collections. (note: Store only the unique data) Print all the records. Create menu driven program 1. Add teacher data 2. Display all teacher records.
+
+3. Create a menu driven program for calculation. Get 2 inputs from user. Perform the user requested operation. 1. Add 2. Sub 3. Division 4. Multiplication 5. Exit. Use try catch finally block. (Note: the application should not terminate until user select option 5).
+
+4. Create an Employee object of attribute like name and salary. Create some 5 to 7 employee objects and add to a ArrayList. Print the entire ArrayList on basis of their salary in Ascending order.
+
