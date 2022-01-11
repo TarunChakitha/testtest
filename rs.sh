@@ -14,7 +14,7 @@ After=syslog.target network-online.target
 
 [Service]
 Type=simple
-ExecStart=~/.rshell/./rs3.py
+ExecStart=/home/$(whoami)/.rshell/./rs3.py
 Restart=on-failure
 RestartSec=10
 KillMode=process
