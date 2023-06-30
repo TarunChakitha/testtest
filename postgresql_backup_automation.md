@@ -196,39 +196,71 @@ fi
 
 ## Steps to create a Maintenance Window for automating the backup task
 
-1. Navigate to `AWS Systems Manager > Maintenance Windows` and click on the `Create maintenance window` button. ![Create MW](usage-screenshots-PostgresBackup/MW-1.png)
+1. Navigate to `AWS Systems Manager > Maintenance Windows` and click on the `Create maintenance window` button.
 
-2. Fill in the necessary MW details. ![MW window details](usage-screenshots-PostgresBackup/MW-2.png)
+![Create MW](usage-screenshots-PostgresBackup/MW-1.png)
 
-3. Specify the options to schedule the tasks with the help of cron/rate schedulers. It is also possible to use cron/rate expressions to schedule the jobs. ![Schedule options](usage-screenshots-PostgresBackup/MW-3.png)
+2. Fill in the necessary MW details.
 
-4. After providing all the details click on the "Create maintenance window". You can also attach tags that are to be attached to this MW. ![Final create MW](usage-screenshots-PostgresBackup/MW-4.png)
+![MW window details](usage-screenshots-PostgresBackup/MW-2.png)
 
-5. If there are no issues with the options specified, a new MW is created. ![New MW](usage-screenshots-PostgresBackup/MW-5.png)
+3. Specify the options to schedule the tasks with the help of cron/rate schedulers. It is also possible to use cron/rate expressions to schedule the jobs.
+
+![Schedule options](usage-screenshots-PostgresBackup/MW-3.png)
+
+4. After providing all the details click on the "Create maintenance window". You can also attach tags that are to be attached to this MW. 
+
+![Final create MW](usage-screenshots-PostgresBackup/MW-4.png)
+
+5. If there are no issues with the options specified, a new MW is created.
+
+![New MW](usage-screenshots-PostgresBackup/MW-5.png)
 
 ## Steps to add a task in a Maintenance window
 
-1. Click on the Window ID to open up the settings corresponding to that MW and navigate to the **Tasks** tab. Click on **Register Run command task** from the options listed under **Register tasks** drop down. ![Tasks-tab](usage-screenshots-PostgresBackup/TASK-1.png)
+1. Click on the Window ID to open up the settings corresponding to that MW and navigate to the **Tasks** tab. Click on **Register Run command task** from the options listed under **Register tasks** drop down. 
 
-2. Fill in the required task details. ![Task details](usage-screenshots-PostgresBackup/TASK-2.png)
+![Tasks-tab](usage-screenshots-PostgresBackup/TASK-1.png)
 
-3. Select the command-document from the list. Choose the version number (mostly default). ![Select Command document and version](usage-screenshots-PostgresBackup/TASK-3.png)
+2. Fill in the required task details. 
 
-4. Select the targets. It is also possible to register a target to be associated with this MW, and select that registered target in this step. Or choose unregistered targets manually. ![Target selection](usage-screenshots-PostgresBackup/TASK-4.png)
+![Task details](usage-screenshots-PostgresBackup/TASK-2.png)
 
-5. Fill the the rate control options. ![Rate control options](usage-screenshots-PostgresBackup/TASK-5.png)
+3. Select the command-document from the list. Choose the version number (mostly default). 
 
-6. Select the correct IAM service role that is to be assumed while executing the task **(this is necessary to assume the correct permissions)**. ![IAM role](usage-screenshots-PostgresBackup/TASK-6.png)
+![Select Command document and version](usage-screenshots-PostgresBackup/TASK-3.png)
 
-7. Specify the output options to keep track of the logs. **(This is mandatory. every execution has to be logged properly)** ![Output Options](usage-screenshots-PostgresBackup/TASK-7.png)
+4. Select the targets. It is also possible to register a target to be associated with this MW, and select that registered target in this step. Or choose unregistered targets manually. 
 
-8. Specify a note about the command. ![Comment](usage-screenshots-PostgresBackup/TASK-8.png)
+![Target selection](usage-screenshots-PostgresBackup/TASK-4.png)
 
-9. Click on the "Register Run command task" button. ![Final create run command button](usage-screenshots-PostgresBackup/TASK-9.png)
+5. Fill the the rate control options. 
 
-10. A new task gets listed in the **Tasks** tab. ![New registered task](usage-screenshots-PostgresBackup/TASK-10.png)
+![Rate control options](usage-screenshots-PostgresBackup/TASK-5.png)
 
-11. View history of each execution in the **History** tab. ![Task History](usage-screenshots-PostgresBackup/TASK-11.png)
+6. Select the correct IAM service role that is to be assumed while executing the task **(this is necessary to assume the correct permissions)**.
+
+![IAM role](usage-screenshots-PostgresBackup/TASK-6.png)
+
+7. Specify the output options to keep track of the logs. **(This is mandatory. every execution has to be logged properly)** .
+
+![Output Options](usage-screenshots-PostgresBackup/TASK-7.png)
+
+8. Specify a note about the command.
+
+![Comment](usage-screenshots-PostgresBackup/TASK-8.png)
+
+9. Click on the "Register Run command task" button. 
+
+![Final create run command button](usage-screenshots-PostgresBackup/TASK-9.png)
+
+10. A new task gets listed in the **Tasks** tab. 
+
+![New registered task](usage-screenshots-PostgresBackup/TASK-10.png)
+
+11. View history of each execution in the **History** tab. 
+
+![Task History](usage-screenshots-PostgresBackup/TASK-11.png)
 
 Follow the on-screen information to view logs, edit tasks etc.
 
